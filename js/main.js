@@ -2,13 +2,13 @@
 //     $('.selector ul li').removeClass('selected');
 //     $(this).addClass('selected');
 // });
-$(document).ready(function () {
-    $('.selector').mousewheel(function(e, delta) {
-        this.scrollLeft -= (delta * 40);
-        e.preventDefault();
-    });
-
-});
+// $(document).ready(function () {
+//     $('.selector').mousewheel(function(e, delta) {
+//         this.scrollLeft -= (delta * 40);
+//         e.preventDefault();
+//     });
+//
+// });
 
 /**
  * main.js

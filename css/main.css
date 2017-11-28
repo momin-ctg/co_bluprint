@@ -283,6 +283,7 @@ textarea {
     /*background-color: #f8f8f6;*/
 /*}*/
 
+
 .selector-page ul li h5 {
     font-size: 22px;
     margin-top: 19px;
@@ -319,13 +320,10 @@ textarea {
     white-space: nowrap;
 }
 
-.selector-page {
-    font-family: "Lato", sans-serif;
-}
 
 .selector {
     max-width: 100%;
-    overflow: scroll;
+    overflow:auto;
     width: 100%;
     display: block;
 }
