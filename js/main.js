@@ -1,25 +1,3 @@
-// $('.selector ul li').click( function() {
-//     $('.selector ul li').removeClass('selected');
-//     $(this).addClass('selected');
-// });
-// $(document).ready(function () {
-//     $('.selector').mousewheel(function(e, delta) {
-//         this.scrollLeft -= (delta * 40);
-//         e.preventDefault();
-//     });
-//
-// });
-
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2017, Codrops
- * http://www.codrops.com
- */
 
 ;(function(window) {
 

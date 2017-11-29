@@ -282,48 +282,27 @@ textarea {
 /*.selector-page ul li:hover {*/
     /*background-color: #f8f8f6;*/
 /*}*/
-
-
-.selector-page ul li h5 {
-    font-size: 22px;
-    margin-top: 19px;
-}
-
-.selector-page ul li p {
-    font-size: 14px;
-    margin: 0;
-}
-
-.selector-page ul li.selected {
-    background-color: #baefb3;
-    box-shadow: inset 0 0 0 1px #30c51d;
-}
-.selector-page ul li + li {
-    margin-left: 10px;
-
-}
-.selector-page ul li {
-    text-align: center;
-    display: inline-block;
-    /*max-width:300px;*/
-    /*padding: 30px 20px;*/
-    border-radius: 4px;
-    white-space: normal;
-    color:#031927;
-}
-
-.selector-page ul {
-    font-size: 0;
-    list-style: none;
-    padding: 25px 0;
-    display: inline-block;
-    white-space: nowrap;
-}
-
-
-.selector {
-    max-width: 100%;
-    overflow:auto;
+.swiper-container {
+    border:10px solid gray;
     width: 100%;
-    display: block;
+    height: 100vh;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /*background: #fff;*/
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
