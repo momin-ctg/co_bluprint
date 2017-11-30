@@ -1,14 +1,3 @@
-/**
- * Swiper 4.0.6
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- * http://www.idangero.us/swiper/
- *
- * Copyright 2014-2017 Vladimir Kharlampidi
- *
- * Released under the MIT License
- *
- * Released on: November 13, 2017
- */
 
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -20,7 +9,7 @@ var w;
 if (typeof window === 'undefined') {
   w = {
     navigator: {
-      userAgent: '',
+      userAgent: ''
     },
     location: {},
     history: {},
@@ -380,7 +369,7 @@ function trigger() {
         evt = new window.CustomEvent(events[i], {
           detail: eventData,
           bubbles: true,
-          cancelable: true,
+          cancelable: true
         });
       } catch (e) {
         evt = document.createEvent('Event');
@@ -824,7 +813,7 @@ var Methods = {
   children: children,
   remove: remove,
   add: add,
-  styles: styles,
+  styles: styles
 };
 
 Object.keys(Methods).forEach(function (methodName) {
