@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -514,21 +514,31 @@
 <script src="js/swiper.esm.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
-        spaceBetween:60,
-        width: 400,
-        speed: 500,
-        mode:'horizontal',
+        spaceBetween:150,
+        width:300,
+        speed: 300,
+        mode: 'horizontal',
         freeMode: true,
+        grabCursor: true,
+        slidesOffsetBefore: 200,
+        slidesOffsetAfter:  -800,
         scrollbar: {
             el: '.swiper-scrollbar',
             hide: false,
-            draggable: true,
-            dragSize:50
+            draggable: true
         },
         mousewheel:{
-            sensitivity:5
+            invert:true,
         }
+
     });
+
+
+
+
+
+
+
 </script>
 <script src="node_modules/animejs/anime.min.js"></script>
 <script src="js/plugins.js"></script>
