@@ -26,8 +26,8 @@
 
 <!-- Swiper -->
 <div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
+    <div class="swiper-wrapper" onclick="openmypage()">
+        <div class="swiper-slide col">
             <div class="grid grid--effect-vega">
                 <a href="#" class="grid__item grid__item--c2">
                     <div class="stack">
@@ -513,29 +513,27 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/swiper.esm.js"></script>
 <script>
+
     var swiper = new Swiper('.swiper-container', {
-        spaceBetween:150,
-        width:300,
+      spaceBetween:80,
+//        width:300,
         speed: 300,
         mode: 'horizontal',
+        slidesPerView:5,
         freeMode: true,
         grabCursor: true,
         slidesOffsetBefore: 200,
-        slidesOffsetAfter:  -800,
+        slidesOffsetAfter:  200,
         scrollbar: {
             el: '.swiper-scrollbar',
             hide: false,
             draggable: true
         },
         mousewheel:{
-            invert:true,
+            invert:true
         }
 
     });
-
-
-
-
 
 
 
