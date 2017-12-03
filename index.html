@@ -26,8 +26,8 @@
 
 <!-- Swiper -->
 <div class="swiper-container">
-    <div class="swiper-wrapper" onclick="openmypage()">
-        <div class="swiper-slide col">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
             <div class="grid grid--effect-vega">
                 <a href="#" class="grid__item grid__item--c2">
                     <div class="stack">
@@ -511,12 +511,11 @@
 <!--<script src="js/vendor/modernizr-3.5.0.min.js"></script>-->
 <!-- Swiper JS -->
 <script src="js/swiper.min.js"></script>
-<script src="js/swiper.esm.js"></script>
+<!--<script src="js/swiper.esm.js"></script>-->
 <script>
 
     var swiper = new Swiper('.swiper-container', {
-      spaceBetween:80,
-//        width:300,
+        spaceBetween:50,
         speed: 300,
         mode: 'horizontal',
         slidesPerView:5,
@@ -531,11 +530,33 @@
         },
         mousewheel:{
             invert:true
+        },
+
+        breakpoints: {
+            1800:{
+                slidesPerView: 4,
+                spaceBetween: 50
+            },
+
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            },
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
         }
 
     });
-
-
 
 </script>
 <script src="node_modules/animejs/anime.min.js"></script>
