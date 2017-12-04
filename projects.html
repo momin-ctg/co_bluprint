@@ -25,7 +25,7 @@
 
         .swiper-container{
             width: 100%;
-            height: 100%;
+            height: 100vh;
         }
 
         .swiper-slide {
@@ -47,7 +47,7 @@
             align-items: center;
         }
 
-         .codesignProjects{
+         .bg{
              overflow:hidden;
              background: url('https://unsplash.it/2600/1200');
              background-size:cover;
@@ -57,10 +57,27 @@
              align-items: center;
          }
 
-        .overview{
-            width:50vw;
-            height:50vh;
-            background: red;
+        .codesignProjects{
+             display: flex;
+             flex-direction: row;
+             justify-content:space-around;
+             align-items: center;
+         }
+
+        .description{
+            padding:25px;
+        }
+
+        .description h1{
+            color:#fff;
+            text-transform: uppercase;
+            font-size:70px;
+            line-height:1.2;
+        }
+
+        .description p{
+            color:#fff;
+
         }
 
     </style>
@@ -69,22 +86,19 @@
 <!-- Swiper -->
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide">
-
-
+        <div class="swiper-slide bg">
             <div class="codesignProjects">
-                <div class="overview"></div>
-                <div class="description"></div>
+                <div class="description">
+                    <h1>east cost group</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est eum exercitationem facilis incidunt magni quo repellat? Alias at doloribus ipsam molestiae veniam veritatis voluptas voluptatem voluptatum. Dolores dolorum excepturi facere in iure molestiae nesciunt obcaecati officiis quae, vitae. Alias aliquam consectetur corporis culpa debitis molestias officiis quidem, unde voluptates!</p>
+
+                    <div class="scroll">
+                        scroll to discover
+                    </div>
+                </div>
+
+
             </div>
-
-
-
-
-
-
-
-
-                <img src="http://unsplash.it/2200/1200?random" alt="">
         </div>
         <div class="swiper-slide">
             <img src="http://unsplash.it/2200/1200?random" alt="">
@@ -97,24 +111,45 @@
         </div>
     </div>
     <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
+    <div class="swiper-scrollbar"></div>
 </div>
 
 <!-- Swiper JS -->
 <script src="js/swiper.min.js"></script>
 <script src="js/swiper.esm.js"></script>
+<script src="node_modules/animejs/anime.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper('.swiper-container', {
         direction: 'vertical',
         parallax:true,
-        speed:600,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
+        speed:9000,
+        freeMode: true,
+        slidePerView:1,
+        progress:true,
+        scrollbar:{
+            el: '.swiper-scrollbar',
+            hide: false,
+            draggable: true
+        },
+//        pagination: {
+//            el: '.swiper-pagination',
+//            clickable: true
+//        },
+        mousewheel:{
+            invert:true,
         }
     });
+
+    (function () {
+//        var pHead = document.querySelectorAll('.description h1');
+        var description = anime({
+            targets: '.description h1',
+            translateY:250,
+            easing: 'easeInOutQuad'
+        });
+    })();
 </script>
 </body>
 </html>
