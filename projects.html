@@ -49,7 +49,7 @@
 
          .bg{
              overflow:hidden;
-             background: url('https://unsplash.it/2600/1200');
+             background: url('https://unsplash.it/2600/1200?random');
              background-size:cover;
              display: flex;
              flex-direction: column;
@@ -80,6 +80,10 @@
 
         }
 
+        .scroll{
+            color:#ffffff;
+        }
+
     </style>
 </head>
 <body>
@@ -100,14 +104,34 @@
 
             </div>
         </div>
-        <div class="swiper-slide">
-            <img src="http://unsplash.it/2200/1200?random" alt="">
+        <div class="swiper-slide bg">
+            <div class="codesignProjects">
+                <div class="description">
+                    <h1>The Council</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est eum exercitationem facilis incidunt magni quo repellat? Alias at doloribus ipsam molestiae veniam veritatis voluptas voluptatem voluptatum. Dolores dolorum excepturi facere in iure molestiae nesciunt obcaecati officiis quae, vitae. Alias aliquam consectetur corporis culpa debitis molestias officiis quidem, unde voluptates!</p>
+
+                </div>
+
+
+            </div>
         </div>
-        <div class="swiper-slide">
-            <img src="http://unsplash.it/2200/1200?random" alt="">
+        <div class="swiper-slide bg">
+            <div class="codesignProjects">
+                <div class="description">
+                    <h1>Abu Simbal</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est eum exercitationem facilis incidunt magni quo repellat? Alias at doloribus ipsam molestiae veniam veritatis voluptas voluptatem voluptatum. Dolores dolorum excepturi facere in iure molestiae nesciunt obcaecati officiis quae, vitae. Alias aliquam consectetur corporis culpa debitis molestias officiis quidem, unde voluptates!</p>
+
+                </div>
+
+
+            </div>
         </div>
-        <div class="swiper-slide">
-            <img src="http://unsplash.it/2200/1200?random" alt="">
+        <div class="swiper-slide bg">
+            <div class="description">
+                <h1>Big hero 6</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est eum exercitationem facilis incidunt magni quo repellat? Alias at doloribus ipsam molestiae veniam veritatis voluptas voluptatem voluptatum. Dolores dolorum excepturi facere in iure molestiae nesciunt obcaecati officiis quae, vitae. Alias aliquam consectetur corporis culpa debitis molestias officiis quidem, unde voluptates!</p>
+
+            </div>
         </div>
     </div>
     <!-- Add Pagination -->
@@ -143,12 +167,26 @@
     });
 
     (function () {
-//        var pHead = document.querySelectorAll('.description h1');
-        var description = anime({
-            targets: '.description h1',
-            translateY:250,
-            easing: 'easeInOutQuad'
-        });
+
+        window.onscroll=function(){
+            var description = anime({
+                targets: '.description h1',
+                translateX:[-3000, 250],
+                easing: 'easeInOutQuad',
+                direction:'alternate',
+                duration:1000
+            });
+            var descriptionP = anime({
+                targets: '.description p',
+                translateX:2000,
+                delay:1500,
+                easing: 'easeInOutQuad',
+                direction:'alternate',
+                duration:1000,
+            });
+        };
+//
+
     })();
 </script>
 </body>
