@@ -401,8 +401,8 @@ button.swiper-pagination-bullet {
   z-index: 50;
   height: 2px;
   width: 20%;
-  left: 45%;
-  transform: translateX(-50);
+  left: 50%;
+  transform: translateX(-50%);
   margin-bottom: 30px;
 }
 .swiper-container-vertical > .swiper-scrollbar {
@@ -415,7 +415,6 @@ button.swiper-pagination-bullet {
 }
 .swiper-scrollbar-drag {
   height: 3px;
-  width: 20%;
   position: relative;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
@@ -430,7 +429,6 @@ button.swiper-pagination-bullet {
 }
 .swiper-scrollbar-drag:hover {
   height: 6px;
-  width: 20%;
   position: relative;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;

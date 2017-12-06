@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a37d44f-dae7-4e1e-a8e5-c163b5235e6b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/css/swiper.css" afterPath="$PROJECT_DIR$/css/swiper.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,28 +25,28 @@
           <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="67">
+                <state relative-caret-position="224">
                   <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="swiper.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="swiper.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/swiper.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2112">
-                  <caret line="66" column="17" lean-forward="false" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+                <state relative-caret-position="302">
+                  <caret line="402" column="12" lean-forward="false" selection-start-line="402" selection-start-column="12" selection-end-line="402" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="434">
-                  <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+                <state relative-caret-position="164">
+                  <caret line="555" column="26" lean-forward="true" selection-start-line="555" selection-start-column="16" selection-end-line="555" selection-end-column="32" />
                   <folding>
                     <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -64,8 +63,8 @@
                     <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-                    <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+                    <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+                    <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -149,6 +148,7 @@
       <find>figure</find>
       <find>offset</find>
       <find>height</find>
+      <find>.swiper-sc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,11 +160,11 @@
         <option value="$PROJECT_DIR$/backup.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/swiper.js" />
-        <option value="$PROJECT_DIR$/css/swiper.css" />
         <option value="$PROJECT_DIR$/projects.html" />
         <option value="$PROJECT_DIR$/css/demo.css" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/swiper.css" />
       </list>
     </option>
   </component>
@@ -266,17 +266,18 @@
       <workItem from="1512444994884" duration="10961000" />
       <workItem from="1512527148652" duration="1075000" />
       <workItem from="1512528582106" duration="98000" />
-      <workItem from="1512528713589" duration="1729000" />
+      <workItem from="1512528713589" duration="3117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91007000" />
+    <option name="totallyTimeSpent" value="92395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2304" height="1269" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11450044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -294,7 +295,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -406,8 +406,8 @@
             <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-            <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
           </folding>
         </state>
       </provider>
@@ -448,8 +448,8 @@
             <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-            <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
           </folding>
         </state>
       </provider>
@@ -513,8 +513,8 @@
             <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-            <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
           </folding>
         </state>
       </provider>
@@ -578,8 +578,8 @@
             <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-            <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
           </folding>
         </state>
       </provider>
@@ -628,8 +628,8 @@
             <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-            <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
           </folding>
         </state>
       </provider>
@@ -662,8 +662,8 @@
             <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-            <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
           </folding>
         </state>
       </provider>
@@ -712,8 +712,8 @@
             <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-            <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
           </folding>
         </state>
       </provider>
@@ -762,8 +762,8 @@
             <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-            <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
           </folding>
         </state>
       </provider>
@@ -804,8 +804,8 @@
             <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-            <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
           </folding>
         </state>
       </provider>
@@ -854,8 +854,8 @@
             <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-            <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
           </folding>
         </state>
       </provider>
@@ -920,14 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/swiper.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
-          <caret line="66" column="17" lean-forward="false" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/demo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -938,7 +930,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
+        <state relative-caret-position="224">
           <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
@@ -946,8 +938,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="164">
+          <caret line="555" column="26" lean-forward="true" selection-start-line="555" selection-start-column="16" selection-end-line="555" selection-end-column="32" />
           <folding>
             <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -964,9 +956,17 @@
             <element signature="n#div#14;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#15;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#16;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1512530227000" expanded="true" signature="1575:1742" ph="..." />
-            <marker date="1512530227000" expanded="true" signature="1669:1697" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1574:1741" ph="..." />
+            <marker date="1512532001000" expanded="true" signature="1668:1696" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/swiper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="402" column="12" lean-forward="false" selection-start-line="402" selection-start-column="12" selection-end-line="402" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
