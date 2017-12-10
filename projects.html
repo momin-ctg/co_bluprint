@@ -151,7 +151,7 @@
         </div>
     </div>
     <!-- Add Pagination -->
-    <div class="swiper-scrollbar"></div>
+    <div class="swiper-pagination"></div>
 </div>
 
 <!-- Swiper JS -->
@@ -165,29 +165,23 @@
         direction: 'vertical',
         parallax: true,
         speed: 300,
-        freeMode: true,
         slidePerView: 1,
-        progress: true,
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            hide: false,
-            draggable: true
-        },
-//        pagination: {
-//            el: '.swiper-pagination',
-//            clickable: true
-//        },
+        progressBar: true,
         mousewheel: {
-            invert: true,
+            invert: true
+        },
+        pagination:{
+            el:'.swiper-pagination',
+            type:'progressbar'
         }
+
     });
 
     (function () {
-
         window.onload = function () {
             var description = anime({
                 targets: '.description h1',
-                translateX: [-3000, 250],
+                translateX: 250,
                 easing: 'easeInOutQuad',
                 direction: 'alternate',
                 duration: 1000
@@ -201,8 +195,6 @@
                 duration: 1000
             });
         };
-//
-
     })();
 </script>
 </body>

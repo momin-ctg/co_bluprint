@@ -77,7 +77,7 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="grid grid--effect-vega">
-                <a href="projects.html" class="grid__item grid__item--c2">
+                <a href="" class="grid__item grid__item--c2">
                     <div class="stack">
                         <div class="stack__deco"></div>
                         <div class="stack__deco"></div>
@@ -573,17 +573,18 @@
         slidesPerView:5,
         freeMode: true,
         grabCursor: true,
-        slidesOffsetBefore: 400,
-        slidesOffsetAfter:  400,
+        slidesOffsetBefore:200,
+        slidesOffsetAfter:200,
+        watchSlidesProgress:true,
         scrollbar: {
             el: '.swiper-scrollbar',
             hide: false,
             draggable: true
         },
         mousewheel:{
-            invert:true
+            invert:true,
+            sensitivity:10
         },
-
         breakpoints: {
             1800:{
                 slidesPerView: 4,
@@ -595,11 +596,11 @@
                 spaceBetween: 20
             },
             992: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 20
             },
             768: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 20
             },
             576: {
@@ -619,33 +620,7 @@
         [].slice.call(document.querySelectorAll('.grid--effect-vega > .grid__item')).forEach(function (stackEl) {
             new VegaFx(stackEl);
         });
-        [].slice.call(document.querySelectorAll('.grid--effect-castor > .grid__item')).forEach(function (stackEl) {
-            new CastorFx(stackEl);
-        });
-        [].slice.call(document.querySelectorAll('.grid--effect-hamal > .grid__item')).forEach(function (stackEl) {
-            new HamalFx(stackEl);
-        });
-        [].slice.call(document.querySelectorAll('.grid--effect-polaris > .grid__item')).forEach(function (stackEl) {
-            new PolarisFx(stackEl);
-        });
-        [].slice.call(document.querySelectorAll('.grid--effect-alphard > .grid__item')).forEach(function (stackEl) {
-            new AlphardFx(stackEl);
-        });
-        [].slice.call(document.querySelectorAll('.grid--effect-altair > .grid__item')).forEach(function (stackEl) {
-            new AltairFx(stackEl);
-        });
-        [].slice.call(document.querySelectorAll('.grid--effect-rigel > .grid__item')).forEach(function (stackEl) {
-            new RigelFx(stackEl);
-        });
-        [].slice.call(document.querySelectorAll('.grid--effect-canopus > .grid__item')).forEach(function (stackEl) {
-            new CanopusFx(stackEl);
-        });
-        [].slice.call(document.querySelectorAll('.grid--effect-pollux > .grid__item')).forEach(function (stackEl) {
-            new PolluxFx(stackEl);
-        });
-        [].slice.call(document.querySelectorAll('.grid--effect-deneb > .grid__item')).forEach(function (stackEl) {
-            new DenebFx(stackEl);
-        });
+
     })();
 </script>
 </body>
