@@ -42,7 +42,7 @@ a:focus {
     align-items: center;
     max-width: 100%;
     /*padding: 0 7em;*/
-    perspective: 900px;
+    perspective: 1200px;
     perspective-origin: 50% 150%;
 }
 
@@ -84,7 +84,7 @@ a:focus {
 .stack {
     position: relative;
     width: 100%;
-    height: 280px;
+    height: auto;
     transform-style: preserve-3d;
 }
 
