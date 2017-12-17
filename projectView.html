@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CoDesign | V-2 | RC-1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Jura" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <script>document.documentElement.className = 'js';</script>
+
+    <style>
+
+        .projectDescription {
+            position: relative;
+        }
+
+        .projectNav {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .projectScroll {
+            width: 25%;
+            height: 2px;
+            background: gray;
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+        }
+
+        .projectScroll:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 5px;
+            border-radius: 5px;
+            background: #ffffff;
+            bottom: -1px;
+            -webkit-transition: height 0.2s ease;
+            -moz-transition: height 0.2s ease;
+            -ms-transition: height 0.2s ease;
+            -o-transition: height 0.2s ease;
+            transition: height 0.2s ease;
+            cursor: pointer;
+        }
+
+        .projectScroll:hover:after {
+            height: 8px;
+            bottom: -3px;
+        }
+
+        .projectVtext {
+            position: fixed;
+            right: 30px;
+            bottom: 60px;
+            transform: rotate(90deg);
+            transform-origin: right top;
+            float: right;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        .fraction {
+            bottom: 20px;
+            right: 100px;
+            display: inline-block;
+            position: fixed;
+            vertical-align: middle;
+            letter-spacing: 0.001em;
+            text-align: center;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .fraction > span {
+            display: block;
+            padding: 0.1em;
+        }
+
+        .fraction span.fdn {
+            border-top: thin solid #ffffff;
+            line-height: 1.5em;
+        }
+
+        .fraction span.bar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="coBorders">
+    <div class="border left"></div>
+    <div class="border right"></div>
+    <div class="border top"></div>
+    <div class="border bottom"></div>
+</div>
+
+<div class="projectDescription" style="background: #b0adad; width: 100%; min-height: 100vh;">
+    <div class="projectContainer">
+        <div class="projectSlide">
+            <img src="https://unsplash.it/2500/1600?random" alt="">
+        </div>
+    </div>
+
+    <!--slider Scroll-->
+    <div class="projectScroll"></div>
+
+    <!--slider fraction-->
+    <div class="fraction">
+        <span class="fup">4</span>
+        <span class="bar">/</span>
+        <span class="fdn">5</span>
+    </div>
+
+    <!--Right Varticle Text-->
+    <div class="projectVtext">
+        <span>lorem Ipsum | </span><span> Dolor Sit Amet |</span>
+    </div>
+</div>
+
+
+<div class="projectNav">
+    <div class="downNav">
+        <img width="20" height="20" src="img/down-arrow.svg" alt="down_nav">
+    </div>
+    <div class="upNav">
+        <img width="20" height="20" src="img/up-arrow.svg" alt="up_nav">
+    </div>
+</div>
+
+</body>
+</html>
