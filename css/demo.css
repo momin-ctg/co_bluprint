@@ -149,6 +149,14 @@ a:focus {
     text-transform: uppercase;
 }
 
+.grid__item-title:after{
+    content: '';
+    width: 80px;
+    display: block;
+    border-bottom: 3px solid #fff;
+    border-radius: 10px;
+    transition-delay: 2s;
+}
 
 .column {
     width: 50%;
