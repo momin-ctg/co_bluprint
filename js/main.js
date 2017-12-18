@@ -16,6 +16,8 @@
         this.DOM.caption = this.DOM.el.querySelector('.grid__item-caption');
         this.DOM.title = this.DOM.caption.querySelector('.grid__item-title');
         this.DOM.columns = {left: this.DOM.caption.querySelector('.column--left'), right: this.DOM.caption.querySelector('.column--right')};
+        this.DOM.columns.left.style.opacity= 0;
+        this.DOM.columns.right.style.opacity = 0;
     }
 
     StackFx.prototype._removeAnimeTargets = function() {
@@ -26,9 +28,8 @@
         anime.remove(this.DOM.columns.right);
     };
 
-    /************************************************************************
-     * VegaFx.
-     ************************************************************************/
+    // for VegaFx
+
     function VegaFx(el) {
         StackFx.call(this, el);
         this._initEvents();
@@ -70,7 +71,7 @@
                 },
                 {
                     value: function(target, index) {
-                        return index*20 + 20;
+                        return index*10 + 10;
                     },
                     duration: 700,
                     easing: [0.2,1,0.3,1]
@@ -96,7 +97,7 @@
             targets: this.DOM.img,
             duration: 900,
             easing: [0.2,1,0.3,1],
-            scale: 0.7
+            scale: 1
         });
 
         anime({
@@ -140,7 +141,7 @@
             translateZ: [
                 {
                     value: function(target, index) {
-                        return index * 20 + 20 - 8;
+                        return index * 10 + 10 - 8;
                     },
                     duration: 200 ,
                     easing: [0.42,0,1,1]
@@ -195,12 +196,12 @@
             duration: 750,
             easing: [0.2,1,0.3,1],
             translateY: 0,
-            opacity: 1
+            opacity: 0
         });
+
     };
 
     window.VegaFx = VegaFx;
-
 
 
 })(window);
