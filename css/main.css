@@ -1,3 +1,37 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass Mono', monospace;
+    color: #edecf2;
+    background: #37373e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: #ff3d53;
+    outline: none;
+    transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+    color: #fff;
+}
+
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
 
 /*Style for 15px White Border*/
 .border{
@@ -64,6 +98,7 @@
     align-items: center;
 }
 
+/*For right to left animation*/
 #allProjects{
     opacity:0;
     animation:load_up 2s forwards;
@@ -81,13 +116,7 @@
 
  }
 
-/*.stack__img {*/
-    /*position: relative;*/
-    /*display: block;*/
-    /*width: 100%;*/
-    /*height:auto;*/
-/*}*/
-
+/*left DateTime*/
 .coDatetime small{
     position: absolute;
     left:30px;
@@ -96,19 +125,124 @@
     letter-spacing: 1px;
 }
 
-/*project slide image css*/
-.figure {
-    margin: 0;
+/* Grid */
+.grid {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*width: 100%;*/
+    /*padding: 0 7em;*/
+    perspective: 900px;
+    perspective-origin: 50% 150%;
 }
 
-.figure figcaption h3 {
+.grid__item {
+    position: relative;
+    display: block;
+    /*flex: none;*/
+    /*width: 100%;*/
+    /*margin: 1.5em 2vw;*/
+    cursor: default;
+    transform-style: preserve-3d;
+}
+
+.grid__item:hover,
+.grid__item:focus {
+    outline: none;
+}
+
+.grid__item--c1,
+.grid__item--c1:hover,
+.grid__item--c1:focus {
+    color: coral;
+}
+
+.grid__item--c2,
+.grid__item--c2:hover,
+.grid__item--c2:focus {
+    color: coral;
+}
+
+.grid__item--c3,
+.grid__item--c3:hover,
+.grid__item--c3:focus {
+    color: coral;
+}
+
+.stack {
+    position: relative;
+    width: 100%;
+    /*height: 200px;*/
+    height:auto;
+    transform-style: preserve-3d;
+}
+
+.stack__deco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background-color: currentColor;
+    /*transform-origin: 50% 100%;*/
+}
+
+.stack__deco:first-child {
+    opacity: 0.2;
+}
+
+.stack__deco:nth-child(2) {
+    opacity: 0.4;
+}
+
+.stack__deco:nth-child(3) {
+    opacity: 0.6;
+}
+
+.stack__deco:nth-child(4) {
+    opacity: 0.8;
+}
+
+.stack__figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    /*height: 100%;*/
+    cursor: pointer;
+    /*transform-origin: 50% 100%;*/
+}
+
+.stack__img {
+    position: relative;
+    display: block;
+    flex: none;
+    width: 100%;
+    height: auto;
+}
+
+.grid__item-caption {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.grid__item-title {
+    font-size: 1.8em;
+    width: 100%;
+    margin: 1em 0;
+    text-align: left;
     color: #fff;
-    float: left;
-    letter-spacing: 2px;
-    line-height: 2;
+    text-transform: uppercase;
 }
 
-.figure figcaption h3:after {
+.grid__item-title:after{
     content: '';
     width: 80px;
     display: block;
@@ -117,44 +251,37 @@
     transition-delay: 2s;
 }
 
-figcaption {
-    position: relative;
-    font-family: 'Bree Serif', serif;
-'
-}
-
-.caption-text {
-    font-family: 'jura', sans-serif;
-    display: block;
-    color: #ffffff;
-    position: absolute;
-    text-align: center;
-    bottom: -120px;
-    left: 50%;
+.column {
+    width: 50%;
+    padding: 0 0.5em;
     opacity: 0;
-    transform: translateX(-50%);
-    cursor: pointer;
-    transition: opacity 0.5s ease-in-out;
 }
 
-.caption-text p {
-    margin: 0;
-    padding: 0;
+.column--left {
+    text-align: right;
 }
 
-.figure:hover .caption-text {
+.column--right {
+    text-align: left;
+}
+
+.column__text {
+    font-size: 0.85em;
+    display: block;
+    color: #fff;
+}
+
+.column--left .column__text {
+    font-weight: bold;
+}
+
+.column--right .column__text {
+    color: #b0adad;
+}
+
+/* Individual effects */
+
+/* Vega */
+.grid--effect-vega .column {
     opacity: 1;
-
-}
-
-/*Figure Image And Animation*/
-figure img {
-    transition: 0.3s;
-}
-
-figure img:hover {
-    box-shadow: 6px -6px 0 0 rgba(255, 255, 255, 0.4),
-    12px -12px 0 0 rgba(255, 255, 255, 0.2),
-    18px -18px 0 0 rgba(255, 255, 255, 0.2),
-    24px -24px 0 0 rgba(0, 0, 0, 0.06);
 }
