@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <script>document.documentElement.className = 'js';</script>
 
     <style>
@@ -100,6 +101,62 @@
         .fraction span.bar {
             display: none;
         }
+
+        /*Animation*/
+
+        .item {
+            width: 30%;
+            height: auto;
+            margin: 50px auto;
+            padding-top: 75px;
+            background: #ccc;
+            text-align: center;
+            color: #FFF;
+            font-size: 3em;
+        }
+
+        /* Animations */
+        [data-aos="example-anim1"] {
+            -webkit-transform: skewX(45deg);
+            transform: skewX(45deg);
+            opacity: 0;
+            -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: transform, opacity;
+            transition-property: transform, opacity, -webkit-transform;
+        }
+        [data-aos="example-anim1"].aos-animate {
+            -webkit-transform: skewX(0);
+            transform: skewX(0);
+            opacity: 1;
+        }
+
+        [data-aos="example-anim2"] {
+            opacity:0;
+            -webkit-transition-property: opacity;
+            transition-property: opacity;
+        }
+        [data-aos="example-anim2"].aos-animate {
+            background: green;
+            opacity: 1;
+        }
+
+        [data-aos="example-anim3"] {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+            opacity: 0;
+            -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: transform, opacity;
+            transition-property: transform, opacity, -webkit-transform;
+        }
+        [data-aos="example-anim3"].aos-animate {
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+            opacity: 1;
+        }
+
+
     </style>
 </head>
 <body>
@@ -111,17 +168,31 @@
     <div class="border bottom"></div>
 </div>
 
-<div class="projectDescription" style="background: #b0adad; width: 100%; min-height: 100vh;">
+<div class="projectDescription" style="overflow: hidden; background: #b0adad; width: 100%; height: 100%;">
     <div class="projectContainer">
         <div class="projectSlide">
-            <img src="https://unsplash.it/2500/1600?random" alt="">
+
+            <div class="item"  data-aos-offset="600" data-aos="example-anim2">
+            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor dolores dolorum, est facere facilis hic inventore ipsum iste iure nemo odio odit officiis quas qui quisquam rerum ullam voluptatum.</small>
+            </div>
+
+            <div class="item"  data-aos-offset="600" data-aos="example-anim2">
+            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor dolores dolorum, est facere facilis hic inventore ipsum iste iure nemo odio odit officiis quas qui quisquam rerum ullam voluptatum.</small>
+
+            </div>
+            <div class="item" data-aos-offset="600" data-aos="example-anim2">
+            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor dolores dolorum, est facere facilis hic inventore ipsum iste iure nemo odio odit officiis quas qui quisquam rerum ullam voluptatum.</small>
+
+            </div>
+
+
         </div>
     </div>
 
     <!--slider Scroll-->
     <div class="projectScroll"></div>
 
-    <!--slider fraction-->
+    <!--Slider Fraction-->
     <div class="fraction">
         <span class="fup">4</span>
         <span class="bar">/</span>
@@ -144,5 +215,13 @@
     </div>
 </div>
 
+<script src="node_modules/aos/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+        startEvent:load
+
+    });
+</script>
 </body>
 </html>
