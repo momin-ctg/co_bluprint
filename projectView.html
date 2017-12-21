@@ -33,6 +33,15 @@
             justify-content: space-between;
         }
 
+        .upNav img{
+            transform: rotate(-90deg);
+            cursor: pointer;
+        }
+        .downNav img{
+            transform: rotate(90deg);
+            cursor: pointer;
+        }
+
         .projectScroll {
             width: 25%;
             height: 2px;
@@ -172,18 +181,14 @@
     <div class="projectContainer">
         <div class="projectSlide">
 
-            <div class="item"  data-aos-offset="600" data-aos="example-anim2">
-            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor dolores dolorum, est facere facilis hic inventore ipsum iste iure nemo odio odit officiis quas qui quisquam rerum ullam voluptatum.</small>
-            </div>
-
-            <div class="item"  data-aos-offset="600" data-aos="example-anim2">
-            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor dolores dolorum, est facere facilis hic inventore ipsum iste iure nemo odio odit officiis quas qui quisquam rerum ullam voluptatum.</small>
-
-            </div>
-            <div class="item" data-aos-offset="600" data-aos="example-anim2">
-            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor dolores dolorum, est facere facilis hic inventore ipsum iste iure nemo odio odit officiis quas qui quisquam rerum ullam voluptatum.</small>
-
-            </div>
+                <div class="slide">
+                    <img src="https://unsplash.it/1920/1400" alt="slideImage">
+                </div>
+                <div class="slide">
+                    <img src="https://unsplash.it/1920/1400?random" alt="slideImage">
+                </div> <div class="slide">
+                    <img src="https://unsplash.it/1920/1400" alt="slideImage">
+                </div>
 
 
         </div>
@@ -208,10 +213,10 @@
 
 <div class="projectNav">
     <div class="downNav">
-        <img width="20" height="20" src="img/down-arrow.svg" alt="down_nav">
+        <img width="20" height="20" src="img/arrow.svg" alt="down_nav">
     </div>
     <div class="upNav">
-        <img width="20" height="20" src="img/up-arrow.svg" alt="up_nav">
+        <img width="20" height="20" src="img/arrow.svg" alt="up_nav">
     </div>
 </div>
 
@@ -220,8 +225,62 @@
     AOS.init({
         duration: 1200,
         startEvent:load
-
     });
+</script>
+
+
+<script>
+
+    var sliderImages = document.querySelectorAll(".slide"),
+        arrowLeft = document.querySelector(".upNav"),
+        arrowRight = document.querySelector(".downNav"),
+        current = 0;
+
+    // Clear all images
+    function reset() {
+        for (var i = 0; i < sliderImages.length; i++) {
+            sliderImages[i].style.display = "none";
+        }
+    }
+
+    // Init slider
+    function startSlide() {
+        reset();
+        sliderImages[0].style.display = "block";
+    }
+
+    // Show prev
+    function slideLeft() {
+        reset();
+        sliderImages[current - 1].style.display = "block";
+        current--;
+    }
+
+    // Show next
+    function slideRight() {
+        reset();
+        sliderImages[current + 1].style.display = "block";
+        current++;
+    }
+
+    // Left arrow click
+    arrowLeft.addEventListener('click', function() {
+        if (current === 0) {
+            current = sliderImages.length;
+        }
+        slideLeft();
+    });
+
+    // Right arrow click
+    arrowRight.addEventListener('click', function() {
+        if (current === sliderImages.length - 1) {
+            current = -1;
+        }
+        slideRight();
+    });
+
+    startSlide();
+
 </script>
 </body>
 </html>
