@@ -37,7 +37,8 @@
     <div id="allProjects" class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="grid grid--effect-vega">
-                <a onclick="location.reload();location.href='projectView.html'" href="#" class="grid__item grid__item--c1">
+                <a onclick="location.reload();location.href='projectView.html'" href="#"
+                   class="grid__item grid__item--c1">
                     <div class="stack">
                         <div class="stack__deco"></div>
                         <div class="stack__deco"></div>
@@ -63,6 +64,7 @@
                 </a>
             </div>
         </div>
+
         <div class="swiper-slide">
             <div class="grid grid--effect-vega">
                 <a href="#" class="grid__item grid__item--c1">
@@ -945,8 +947,42 @@
     });
 </script>
 <script src="js/anime.min.js"></script>
-<!--<script src="js/plugins.js"></script>-->
 <script src="js/main.js"></script>
+<script>
+    (function () {
+
+
+        // anime
+
+        // window.onload = function () {
+        //     var cntWd, sldWd, tb;
+        //     $(function() {
+        //
+        //         cntWd = $('.swiper-container').innerWidth();
+        //         tb = $('.swiper-slide');
+        //         sldWd = tb.outerWidth();
+        //
+        //         $('.swiper-container').mousemove(function(e)
+        //         {
+        //             tb.css({left: ((cntWd - sldWd)*((e.pageX / cntWd).toFixed(2))).toFixed(1) +"px" });
+        //         });
+        //     });
+        // };
+
+
+
+        // var cntWd, sldWd, tb;
+        // cntWd = document.querySelectorAll('.swiper-wrapper').innerWidth;
+        // tb = document.querySelectorAll('.swiper-slide');
+        // sldWd = tb.outerWidth;
+        // document.addEventListener('mousemove', function (e) {
+        //     tb.style({left: ((cntWd - sldWd) * ((e.pageX / cntWd).toFixed(3))).toFixed(1) + "px"});
+        // })
+
+    })();
+
+
+</script>
 <script>
     (function () {
         [].slice.call(document.querySelectorAll('.grid--effect-vega > .grid__item')).forEach(function (stackEl) {

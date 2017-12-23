@@ -140,8 +140,8 @@ a:focus {
 .grid__item {
     position: relative;
     display: block;
-    /*flex: none;*/
-    /*width: 100%;*/
+    flex: none;
+    width: 100%;
     /*margin: 1.5em 2vw;*/
     cursor: default;
     transform-style: preserve-3d;
@@ -240,6 +240,7 @@ a:focus {
     color: #fff;
     text-transform: uppercase;
 }
+
 
 .grid__item-title:after{
     content: '';
