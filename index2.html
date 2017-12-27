@@ -17,6 +17,20 @@
     <link rel="stylesheet" href="css/swiper.css">
     <script>document.documentElement.className = 'js';</script>
     <script src="js/main.js"></script>
+
+    <style>
+        .grid__item-title{
+            /*position: relative;*/
+            /*transition-delay: 1.5s;*/
+            /*transition-property: all;*/
+            /*transition-duration: 1s;*/
+            /*transform-style: preserve-3d;*/
+        }
+        /*.grid__item-title:hover{*/
+            /*position: relative;*/
+            /*left:100px;*/
+        /*}*/
+    </style>
 </head>
 <body>
 
@@ -893,7 +907,7 @@
 
 <!-- Swiper JS -->
 <script src="js/swiper.min.js"></script>
-<script src="js/swiper.esm.js"></script>
+<!--<script src="js/swiper.esm.js"></script>-->
 <script>
     var swiper = new Swiper('.swiper-container', {
         spaceBetween: 30,
@@ -904,7 +918,7 @@
         grabCursor: true,
         slidesOffsetBefore: 400,
         slidesOffsetAfter: 400,
-        watchSlidesProgress: true,
+        // watchSlidesProgress: true,
         scrollbar: {
             el: '.swiper-scrollbar',
             hide: false,
@@ -950,6 +964,31 @@
 <script src="js/main.js"></script>
 <script>
     (function () {
+        document.getElementById("allProjects").addEventListener("scroll", myFunction);
+
+        function myFunction() {
+            var title = document.querySelectorAll('.grid__item-title');
+            for(var i = 0; i<= title.length; i++){
+                setTimeout(function () {
+                    title.style.left ='0';
+                    title.style.position ='relative';
+                    title.style.transitionDelay='1.5s';
+                }, 1500)
+            }
+
+        }
+
+        // var projectContainer = document.querySelectorAll('.swiper-container');
+        //
+        // projectContainer.addEventListener('scroll', function(){
+        //     anime({
+        //         targets: this.DOM.title,
+        //         duration: 750,
+        //         easing: [0.2,1,0.3,1],
+        //         translateX: 100,
+        //         opacity: 1
+        //     });
+        // })
 
 
         // anime

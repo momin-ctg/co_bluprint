@@ -7,6 +7,7 @@
     function StackFx(el) {
         this.DOM = {};
         this.DOM.el = el;
+        // this.DOM.swipe = this.DOM.el.querySelector('.swiper-container');
         this.DOM.stack = this.DOM.el.querySelector('.stack');
         this.DOM.stackItems = [].slice.call(this.DOM.stack.children);
         this.totalItems = this.DOM.stackItems.length;
@@ -19,6 +20,7 @@
     }
 
     StackFx.prototype._removeAnimeTargets = function() {
+        // anime.remove(this.DOM.swipe);
         anime.remove(this.DOM.stackItems);
         anime.remove(this.DOM.img);
         anime.remove(this.DOM.title);
@@ -46,9 +48,25 @@
             self._removeAnimeTargets();
             self._out();
         };
+        // this._mousescrollFn = function() {
+        //     self._removeAnimeTargets();
+        //     self._scroll();
+        // };
         this.DOM.stack.addEventListener('mouseenter', this._mouseenterFn);
         this.DOM.stack.addEventListener('mouseleave', this._mouseleaveFn);
+        // this.DOM.swipe.addEventListener('scroll', this._mousescrollFn);
     };
+
+    // VegaFx.prototype._scroll = function() {
+    //     var self = this;
+    //
+    //     anime({
+    //         targets: this.DOM.title,
+    //         translateX: {
+    //         value: [100, 0]
+    //     }
+    //     })
+    // };
 
     VegaFx.prototype._in = function() {
         var self = this;
